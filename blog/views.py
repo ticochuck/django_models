@@ -9,3 +9,7 @@ class HomePage(ListView):
     template_name = 'home.html'
     model = Post
 
+
+class PostDetailPage(DetailView):
+    template_name = 'post_detail.html'
+    model = Post
