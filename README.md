@@ -1,0 +1,40 @@
+# Django Models
+
+[Link to Latest PR]()
+
+## Description
+
+Create a blog project, a blog app and a Post model. 
+Add html templates.
+
+
+## Usage
+
+- `poetry shell` to start your virtual environment
+- `poetry install` to install dependencies
+- create .env file with the following variables and save it into 'snacks_project' directory
+    - SECRET_KEY=secret key for the app (typically 50-characters long string)
+    - DEBUG=should be set to True in development
+    - ALLOWED_HOSTS=localhost,127.0.0.1 (for testing)
+- `python manage.py makemigrations` - to generate DB schema
+- `python manage.py migrate` - to create DB schema
+- `python manage.py createsuperuser` - to create user with admin access
+- `python manage.py collectstatic` - to collect apps static files
+- `python manage.py runserver` - to run server
+
+## Tests
+Use Django’s built in testing tools
+- Test home page route 
+- Test home page template
+
+## Lab26 - Django Models
+
+[Canvas Assignment](https://canvas.instructure.com/courses/2045906/assignments/15160045)
+
+## Author
+
+[Chuck Li Villalobos](https://github.com/ticochuck)
+
+
+## References
+[env file](https://django-environ.readthedocs.io/en/latest/)
