@@ -6,13 +6,21 @@
 
 
 {% block content %}
-    <h1>This is the Post Detail Page</h1>
-
-    <h2>{{ post.title }}</h2>
-    <ul>
-        <li>Author: {{ post.author }}</li>
-        <li>Body: {{ post.body }}</li>
     
+
+    <h2>Post Details</h2>
+    
+    <ul>
+        <li>Post Title<br>
+            <span> {{ post.title }}</span>
+        </li>
+        <li>Author<br>
+            <span> {{ post.author }}</span>
+        </li>
+
+        <li>Body<br>
+            <span> {{ post.body }}</span>
+        </li>
     </ul>
     
 {% endblock content %}
