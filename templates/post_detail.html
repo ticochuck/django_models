@@ -9,11 +9,10 @@
     <h1>This is the Post Detail Page</h1>
 
     <h2>{{ post.title }}</h2>
-    <p>{{ post.author }}</p>
-    <p>{{ post.body }}</p>
-
     <ul>
-        <li>Hola</li>
-        <li>Adios</li>
+        <li>Author: {{ post.author }}</li>
+        <li>Body: {{ post.body }}</li>
+    
     </ul>
+    
 {% endblock content %}
