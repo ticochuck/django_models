@@ -1,6 +1,6 @@
 # Django Models
 
-[Link to Latest PR]()
+[Link to Latest PR](https://github.com/ticochuck/django_models/pull/1)
 
 ## Description
 
