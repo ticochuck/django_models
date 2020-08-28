@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Blog Home</title>
+{% endblock title %}
+
+<link rel="stylesheet" href="{% static 'css/styles.css' %">
+
+{% block content %}
+    <h1>Welcome to my Blog</h1>
+
+    <h2>Posts list</h2>
+    <ul>
+        {% for post in object_list %}
+            <li><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
